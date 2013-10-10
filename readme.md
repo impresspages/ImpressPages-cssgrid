@@ -25,8 +25,6 @@ To be exact, the grid class uses the following syntax:
 
     col_[|md_|lg_]{1..12}
 
-The column layouts are applied in the following sequence: mobile, medium screen, large screen.
-
 The sum of all columns should be equal to 12.
 
 The example below shows the sample usage of the grid. For mobile devices, the content is displayed in full width (12
@@ -40,7 +38,8 @@ screens, 9 + 3 columns for large screens):
         SAMPLE CONTENT RIGHT
     </div>
 
-If you need to preview the grid layout, add the `showGridHint` class.
+If you need to preview the grid layout, add the `showGridHint` class to row's container `div`, and add the `gridHint` class
+to a row.
 
 ## Requirements
 
