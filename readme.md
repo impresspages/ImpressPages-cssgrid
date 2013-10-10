@@ -38,7 +38,7 @@ screens, 9 + 3 columns for large screens):
         SAMPLE CONTENT RIGHT
     </div>
 
-If you need to preview the grid layout, add the `showGridHint` class to row's container `div`, and add the `gridHint` class
+If you need to preview the grid layout, add the `showGridHint` class to `body` element, and add the `gridHint` class
 to a row.
 
 ## Requirements
