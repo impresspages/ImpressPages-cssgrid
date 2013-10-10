@@ -3,19 +3,24 @@
 <head>
     <link rel="stylesheet" type="text/css" href="grid.css">
     <style type="text/css">
-        body {
-            padding: 0;
-            margin: 0;
+
+        [class^="col_"],
+        [class*=" col_"] {
+            margin-bottom: 20px;
+            padding: 0 10px; /* Change the padding here */
+        }
+
+        [class^="col_"] .grid,
+        [class*=" col_"] .grid {
+            margin: 0 -20px; /* if it's nested column remove padding to stick to edges */
         }
 
         [class^="col_"], [class*=" col_"] {
-            background-color: #00A8DA;
-            border: 6px solid white;
+            background-clip: content-box;
             color: white;
             font-family: arial;
-            font-weight: 600;
-            margin-bottom: 20px;
-            padding: 10px 0px;
+            font-weight: bold;
+            line-height: 2em;
             text-align: center;
         }
 
@@ -36,12 +41,10 @@
             padding: 0 10px;
         }
 
-
     </style>
     <title>ImpressPages grid. Responsive demo.</title>
 </head>
 <body>
-<h2>Responsive grid example</h2>
 <!-- TWELVE COLUMN -->
 <div class="color1">
     <div class="col_12 col_md_2 col_lg_1">
@@ -123,7 +126,7 @@
 </div>
 
 <!-- THREE COLUMN -->
-<div>
+<div class="color1">
     <div class="col_12 col_md_4">
         Four
     </div>
@@ -136,7 +139,7 @@
 </div>
 
 <!-- TWO COLUMNS OF EQUAL WIDTH -->
-<div class="color1">
+<div class="color2">
     <div class="col_12 col_md_6">
         Six
     </div>
@@ -146,7 +149,7 @@
 </div>
 
 <!-- TWO COLUMNS OF DIFFERENT WIDTH -->
-<div class="color2">
+<div class="color3">
     <div class="col_12 col_md_4">
         Four
     </div>
@@ -156,7 +159,7 @@
 </div>
 
 <!-- FOUR COLUMNS OF DIFFERENT WIDTH -->
-<div class="color3">
+<div class="color1">
     <div class="col_12 col_md_1">
         One
     </div>
@@ -171,7 +174,7 @@
     </div>
 </div>
 <!-- FIVE COLUMNS OF DIFFERENT WIDTH -->
-<div class="color1">
+<div class="color2">
     <div class="col_12 col_md_2">
         Two
     </div>
@@ -190,7 +193,7 @@
 </div>
 
 <!-- THREE COLUMNS -->
-<div class="color2">
+<div class="color3">
     <div class="col_12 col_md_2">
         Two
     </div>
