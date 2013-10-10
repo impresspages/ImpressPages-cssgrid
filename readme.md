@@ -7,6 +7,8 @@ Responsive dynamic grid for web.
 ImpressPages grid is 12 column layout grid. Three sizes for mobile, medium (480px) and large (980px) screens provided.
 This grid follows *mobile first* concept.
 
+This grid also has been provided in LESS CSS format.
+
 ## Usage
 
 Add the link to grid.css in your HTML file. For example,
@@ -25,7 +27,6 @@ screens, 9 + 3 columns for large screens):
         SAMPLE CONTENT RIGHT
     </div>
 
-This grid also has been provided in LESS CSS format.
 
 ## Requirements
 
